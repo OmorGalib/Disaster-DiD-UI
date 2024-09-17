@@ -1,0 +1,37 @@
+// Fonts Family
+$font-en-satoshi: 'Satoshi', sans-serif;
+$font-en-primary: $font-en-satoshi;
+$font-en-family: "Instrument Serif", serif;
+
+
+
+// COLOR
+$color-primary: #076b20;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-danger: #e71313;
+
+
+//box shadow
+$box-shadow-all: 1px 5px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-card: 0px 0px 10px 0px rgba(123,87,50,0.3);
+
+// Container
+$container-max-width: 1340px;
+
+//header height
+$header-height: 60px;
+$header-height-sm: 50px;
+
+// Fonts
+$font-title: 34px;
+$font-title-sm: 26px;
+
+$font-sub-title: 26px;
+$font-sub-title-sm: 20px;
+
+$font-title-desc: 16px;
+$font-title-desc-sm: 12px;
+
+$font-readable: 14px;
+$font-readable-sm: 12px;

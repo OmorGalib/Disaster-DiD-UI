@@ -1,0 +1,42 @@
+@import "../../../theme/variables";
+.volunteer-card{
+    box-shadow: $box-shadow-card;
+    border-radius: 5px;
+    cursor: pointer;
+    .card-img{
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transform: scale(1);
+            transition: all 0.5s ease;
+            overflow: hidden;
+            &:hover{
+                transform: scale(1.1);
+                transition: all 0.5s ease;
+                overflow: hidden;
+            }
+        }
+    }
+    .card-details{
+        padding: 10px;
+        .name,.age,.number,.task,.location{
+            color: $color-primary;
+            font-size: calc($font-title-desc + 2px);
+            font-weight: 600;
+            font-family: $font-en-primary;
+            margin-bottom: 5px;
+            span{
+                color: $color-black;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../../theme/variables";
+.crisis-blog{
+    box-shadow: $box-shadow-card;
+    border-radius: 5px;
+    cursor: pointer;
+    .blog-img{
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transform: scale(1);
+            transition: all 0.5s ease;
+            overflow: hidden;
+            &:hover{
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+                overflow: hidden;
+            }
+        }
+    }
+    .blog-details{
+        padding: 10px;
+        .title{
+            color: $color-danger;
+            font-size: calc($font-title-desc + 2px);
+            font-weight: 600;
+            font-family: $font-en-primary;
+            margin-bottom: 5px;
+        }
+        .description{
+            color: $color-black;
+            font-size: $font-title-desc;
+            font-weight: 500;
+            font-family: $font-en-primary;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import "../../../../theme/variables";
+
+.container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 40px 0;
+}
+.section-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+        color: $color-black;
+        font-size: calc($font-title + 10px);
+        font-weight: 700;
+        font-family: $font-en-primary;
+        line-height: 70px;
+        cursor: pointer; 
+        text-align: center;
+        span{
+            svg{
+                height: 40px;
+                width: 30px;
+                fill: $color-primary;
+            }
+            color: $color-primary;
+            font-size: calc($font-title + 25px);
+        }
+        small{
+            color: $color-primary;
+            font-size: calc($font-title - 15px);
+        }
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
+        margin: 30px auto;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: calc($font-readable + 2px);
+        font-weight: 600;
+        font-family: $font-en-primary;
+        background-color: #0a912c;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        svg{
+            fill: $color-white;
+        }
+        &:hover{
+            background-color: #0dc03a;
+            transition: all 0.5s ease;
+            gap: 15px;
+        }
+    }
+}
+.section-right{
+    background-color: aliceblue;
+    box-shadow: $box-shadow-all;
+}
+@media only screen and (max-width: 599px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .section-left{
+        h3{
+            font-size: $font-title;
+            line-height: 60px;
+            span{
+                svg{
+                    height: 30px;
+                    width: 25px;
+                }
+                font-size: calc($font-title + 5px);
+            }
+            small{
+                font-size: calc($font-title - 15px);
+            }
+        }
+    }
+}

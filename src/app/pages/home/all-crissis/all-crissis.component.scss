@@ -1,0 +1,54 @@
+@import "../../../../theme/variables";
+
+.container{
+    margin-top: 20px;
+}
+h2{
+    color: $color-danger;
+    font-size: calc($font-sub-title + 10px);
+    font-weight: 700;
+    font-family: $font-en-primary;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    svg{
+        fill: $color-danger;
+    }
+}
+.crises{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    margin: 30px auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: calc($font-readable + 2px);
+    font-weight: 600;
+    font-family: $font-en-primary;
+    background-color: $color-danger;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    svg{
+        fill: $color-white;
+    }
+    &:hover{
+        background-color: #f03434;
+        transition: all 0.5s ease;
+        gap: 15px;
+    }
+}
